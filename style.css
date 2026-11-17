@@ -1,0 +1,259 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #100A18;
+    color: #FFFFFF;
+}
+/* Left Welcome Section */
+.welcome-section {
+    background: linear-gradient(135deg, #160D26, #5D28D9);
+    color: white;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+.welcome-section {
+    width: 100%;
+}
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.brand-icon {
+    margin-right: 8px;
+}
+.welcome-label h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+.welcome-text p {
+    line-height: 1.7;
+    max-width: 400px;
+    color: #E9D5FF;
+}
+/* Decorative circle */
+.visual-container {
+    height: 180px;
+    width: 180px;
+    margin: 40px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #A855F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid #E9D5FF;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.orbit-two {
+    width: 180px;
+    height: 180px;
+}
+
+.orbit-three {
+    width: 210px;
+    height: 210px;
+}
+
+.floating-dot {
+    display: none;
+}
+
+.welcome-footer {
+    color: #E9D5FF;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Right login section */
+.form-section {
+    background-color: #100A18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 25px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.form-container > p {
+    color: #B9A9C9;
+    margin-bottom: 30px;
+}
+
+/* Form labels and input fields */
+form > label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+form > input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 22px;
+    border: 1px solid #49365E;
+    border-radius: 8px;
+    background-color: #1D1429;
+    color: white;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #A855F7;
+}
+
+/* Password field */
+.password-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.password-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #49365E;
+    border-radius: 8px 0 0 8px;
+    background-color: #1D1429;
+    color: white;
+    outline: none;
+}
+
+.password-box button {
+    padding: 0 15px;
+    border: 1px solid #49365E;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #2B1B3D;
+    color: #E9D5FF;
+    cursor: pointer;
+}
+
+/* Remember me and forgot password */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+a {
+    color: #C084FC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sign In button */
+.login-button,
+.google-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #6D28D9;
+    color: white;
+    border: none;
+}
+
+.login-button:hover {
+    background-color: #7C3AED;
+}
+
+/* OR divider */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+    color: #8D7C9D;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #49365E;
+}
+
+/* Google button */
+.google-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #49365E;
+}
+
+.google-button:hover {
+    background-color: #1D1429;
+}
+
+/* Sign up text */
+.signup-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* Mobile screen styling */
+@media (max-width: 991px) {
+    .welcome-section {
+        min-height: 400px;
+        padding: 35px;
+    }
+
+    .brand {
+        margin-bottom: 35px;
+    }
+
+    .welcome-text h1 {
+        font-size: 38px;
+    }
+
+    .visual-container {
+        margin: 30px auto;
+    }
+}
